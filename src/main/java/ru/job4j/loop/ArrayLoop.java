@@ -6,9 +6,16 @@ public class ArrayLoop {
         for (int i = 0; i < 5; i++) {
             numbers[i] = i * 2 + 3;
         }
+
         for (int i = 0; i < 5; i++) {
             System.out.println("Элемент массива names с "
                     + "номером " + i + ":" + numbers[i]);
+        }
+
+        System.out.println();
+
+        for (int number : numbers) {
+            System.out.println(number);
         }
     }
 }
