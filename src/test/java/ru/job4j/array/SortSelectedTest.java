@@ -15,7 +15,7 @@ public class SortSelectedTest {
     }
 
     @Test
-    public void whenSortOneMore() {
+    public void whenSort5Elements() {
         int[] data = new int[] {5, 4, 1, 2, 3};
         int[] result = SortSelected.sort(data);
         int[] expected = new int[] {1, 2, 3, 4, 5};
