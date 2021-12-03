@@ -25,13 +25,24 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenFind3() {
+    public void whenDiapasonHas2Then3() {
         int[] data = new int[] {5, 2, 10, 2, 4};
         int el = 2;
         int start = 2;
         int finish = 4;
         int result = FindLoop.indexOf(data, el, start, finish);
         int expected = 3;
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void whenDiapasonHasNo33Then0() {
+        int[] data = new int[] {5, 2, 10, 2, 4};
+        int el = 33;
+        int start = 0;
+        int finish = 4;
+        int result = FindLoop.indexOf(data, el, start, finish);
+        int expected = -1;
         assertEquals(expected, result);
     }
 }
