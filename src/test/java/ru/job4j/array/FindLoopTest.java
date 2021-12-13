@@ -36,7 +36,7 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenDiapasonHasNo33Then0() {
+    public void whenDiapasonHasNo33ThenMinus1() {
         int[] data = new int[] {5, 2, 10, 2, 4};
         int el = 33;
         int start = 0;
